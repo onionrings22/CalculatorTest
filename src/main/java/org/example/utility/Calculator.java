@@ -1,4 +1,6 @@
-package org.example.actions;
+package org.example.utility;
+
+import org.example.exception.DivideByZeroException;
 
 public interface Calculator {
     /**
@@ -31,8 +33,11 @@ public interface Calculator {
      * Divides the first param by the second
      * and returns the quotient
      *
+     * @throws org.example.exception.DivideByZeroException
+     * if b is equal to zero
+     *
      * @param a  the dividend
      * @param b  the divisor
      */
-    int divide(int a, int b);
+    int divide(int a, int b) throws DivideByZeroException;
 }

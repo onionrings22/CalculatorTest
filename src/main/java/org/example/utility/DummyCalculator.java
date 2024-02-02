@@ -1,4 +1,4 @@
-package org.example.actions;
+package org.example.utility;
 
 public class DummyCalculator implements Calculator{
     @Override

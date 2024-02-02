@@ -1,4 +1,4 @@
-package org.example.actions;
+package org.example.utility;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -10,7 +10,7 @@ class CalculatorMultiplyTest {
 
     @BeforeEach
     void setup() {
-        calculator = new DummyCalculator();
+        calculator = new DefaultCalculator();
     }
 
     @Test
